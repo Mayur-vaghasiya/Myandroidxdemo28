@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#3b3832</color>
+    <color name="colorPrimaryDark">#000000</color>
+    <color name="colorAccent">#3b3832</color>
+
+    <color name="background1">#FFE0E1F2</color>
+    <color name="toolbarcolor">#252525</color>
+
+    <color name="white">#FFFFFF</color>
+    <color name="edit_text_color">#4C4D73</color>
+
+    <color name="text_result">#000000</color>
+    <color name="custom_progress_default_color">#b1000000</color>
+
+    <!--Loginscreen-->
+    <color name="logbtnbg">#820602</color><!-- it is use for fontcolor also -->
+    <color name="logineditborder">#c1b5b5</color>
+    <color name="loginedittext">#434b4e</color>
+    <color name="logintextcolor">#444c4f</color>
+    <color name="hit">#667376</color>
+    <color name="logintext">#333333</color>
+    <color name="loginedit">#777777</color>
+
+    <!--<color name="onpress">#FF710400</color>-->
+    <color name="onpress">#FFFFFFFF</color>
+
+    <!--Dashboard dsearch-->
+    <color name="dahbackground">#EFEFEF</color>
+
+    <color name="dashbackground">#e7e7e7</color>
+    <color name="blackground">#252524</color>
+    <color name="view_color">#c1c1c1</color>
+
+    <color name="dashdivider">#C1B5B5</color>
+    <color name="dahsboxcolor">#F9F9F9</color>
+    <color name="dashusername">#43475A</color><!--use for search text also-->
+
+    <!--Registration-->
+
+    <color name="Registrationback">#E9ECF4</color>
+    <color name="Regicheck">#212178</color>
+    <color name="uncheckicon">#9AAAFE</color>
+    <color name="textpress">#FFD63E38</color>
+
+    <!--Diamond Search-->
+    <color name="dividerline">#d8d1d1</color>
+    <color name="shapbackground">#f9f9f9</color>
+    <color name="dsearchbg">#E9ECF4</color>
+    <color name="dimicontextcolor">#667376</color>
+    <color name="shapiconcolor">#667376</color>
+    <color name="fonttxtcolor">#4C4D73</color>
+    <color name="edtborder">#B8BCC8</color>
+    <color name="divider_selector">#43475A</color>
+
+    <color name="edtbgcolor">#F2F4FA</color>
+
+    <color name="iconcolor">#8585A5</color>
+
+    <color name="hint">#B6BBC6</color>
+    <color name="popupheader">#FF3232A7</color>
+
+    <!--RESULT-->
+    <color name="linetop">#D5D6E9</color>
+    <color name="divider">#FFEBECF0</color>
+    <color name="recordback">#F9F9F9</color>
+    <color name="resultcountcolor">#434748</color>
+    <color name="resultcotbackcolor">#e1e1e1</color>
+    <color name="back">#FFF7F7F7</color>
+
+    <!--=== New Designe ===-->
+    <color name="toolbarcolornew">#3b3832</color>
+    <color name="golden">#D2AE70</color>
+    <color name="spalshfont">#333333</color>
+    <color name="dashitemback">#f0f0f0</color>
+    <color name="dahsbackground">#fcf9f5</color>
+    <color name="shapbackcolor">#f2f2f2</color>
+    <color name="resulttext">#444554</color>
+    <color name="resulttitle">#999999</color>
+    <color name="resultcount">#fdfdfd</color>
+    <color name="resultcountback">#565656</color>
+    <color name="resultback">#f6f6f6</color>
+    <color name="backgud_color">#203b3832</color>
+    <color name="from_to_color">#938f87</color>
+    <color name="select_color">#D2AE70</color>
+    <color name="dashitemtext">#3b3832</color>
+    <color name="divider_selectornew">#3E3b36</color>
+    <color name="dimdetaildis">#363636</color>
+    <color name="dimdetailresult">#83808c</color>
+    <color name="detailbackcolor">#FCF9F5</color>
+    <color name="slidermenuicon">#81807E</color>
+    <color name="slideitemcolor">#020202</color>
+    <color name="selectedvalueback">#fff6da</color>
+</resources>
