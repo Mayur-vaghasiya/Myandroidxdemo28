@@ -15,9 +15,9 @@ import android.util.Log;
 
 import androidx.core.app.NotificationCompat;
 
-import com.example.pushnotification.Constants;
 import com.example.pushnotification.R;
 import com.example.pushnotification.ui.MainActivity;
+import com.example.pushnotification.util.Staticdatautility;
 import com.google.firebase.messaging.FirebaseMessagingService;
 import com.google.firebase.messaging.RemoteMessage;
 
@@ -101,8 +101,8 @@ public class MyFirebaseMessagingService extends FirebaseMessagingService {
 
             if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.O) {
                 int importance = NotificationManager.IMPORTANCE_HIGH;
-                NotificationChannel mChannel = new NotificationChannel(Constants.CHANNEL_ID, Constants.CHANNEL_NAME, importance);
-                mChannel.setDescription(Constants.CHANNEL_DESCRIPTION);
+                NotificationChannel mChannel = new NotificationChannel(Staticdatautility.CHANNEL_ID, Staticdatautility.CHANNEL_NAME, importance);
+                mChannel.setDescription(Staticdatautility.CHANNEL_DESCRIPTION);
                 mChannel.enableLights(true);
                 mChannel.setLightColor(Color.GREEN);
                 mChannel.enableVibration(true);
