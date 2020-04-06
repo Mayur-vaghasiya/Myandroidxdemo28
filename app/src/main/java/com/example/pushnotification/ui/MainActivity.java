@@ -244,11 +244,11 @@ public class MainActivity extends AppCompatActivity {
         final AppCompatTextView txtName = (AppCompatTextView) dialog.findViewById(R.id.tv_name);
         txtName.setSelected(true);
         final AppCompatTextView txtCodetwo = (AppCompatTextView) dialog.findViewById(R.id.tv_codetwo);
-        final AppCompatTextView actv_namethree = (AppCompatTextView) dialog.findViewById(R.id.tv_codethree);
+        final AppCompatTextView txtCountryName = (AppCompatTextView) dialog.findViewById(R.id.tv_codethree);
         final AppCompatImageView txtPhoto = (AppCompatImageView) dialog.findViewById(R.id.aciv_flag);
         txtName.setText("CountryName : " + countryList.get(position).getName().toString());
         txtCodetwo.setText("AlphaCode2 : " + countryList.get(position).getAlpha2Code().toString());
-        actv_namethree.setText("AlphaCode3 : " + countryList.get(position).getAlpha3Code().toString());
+        txtCountryName.setText("AlphaCode3 : " + countryList.get(position).getAlpha3Code().toString());
         byte[] image = countryList.get(position).getImage();
         if (null != image) {
             Bitmap bmp = BitmapFactory.decodeByteArray(image, 0, image.length);
