@@ -135,8 +135,8 @@ public class MainActivity extends AppCompatActivity {
                     }
                 });
 
-        AppCompatTextView actv_header_name = (AppCompatTextView) toolbar.findViewById(R.id.actv_header_name);
-        actv_header_name.setText(getString(R.string.registration));
+        AppCompatTextView txtHeaderNname = (AppCompatTextView) toolbar.findViewById(R.id.actv_header_name);
+        txtHeaderNname.setText(getString(R.string.registration));
 
         search = (CleanableEditText) findViewById(R.id.search);
 
@@ -185,7 +185,7 @@ public class MainActivity extends AppCompatActivity {
         }));
         fab.setOnClickListener(new View.OnClickListener() {
             public void onClick(View v) {
-                SaveDialog();
+                saveDialog();
             }
         });
     }
@@ -241,18 +241,18 @@ public class MainActivity extends AppCompatActivity {
         final Dialog dialog = new Dialog(activity);
         dialog.requestWindowFeature(Window.FEATURE_NO_TITLE);
         dialog.setContentView(R.layout.custom_dialog);
-        final AppCompatTextView actv_name = (AppCompatTextView) dialog.findViewById(R.id.tv_name);
-        actv_name.setSelected(true);
-        final AppCompatTextView actv_codetwo = (AppCompatTextView) dialog.findViewById(R.id.tv_codetwo);
+        final AppCompatTextView txtName = (AppCompatTextView) dialog.findViewById(R.id.tv_name);
+        txtName.setSelected(true);
+        final AppCompatTextView txtCodetwo = (AppCompatTextView) dialog.findViewById(R.id.tv_codetwo);
         final AppCompatTextView actv_namethree = (AppCompatTextView) dialog.findViewById(R.id.tv_codethree);
-        final AppCompatImageView aciv_photo = (AppCompatImageView) dialog.findViewById(R.id.aciv_flag);
-        actv_name.setText("CountryName : " + countryList.get(position).getName().toString());
-        actv_codetwo.setText("AlphaCode2 : " + countryList.get(position).getAlpha2Code().toString());
+        final AppCompatImageView txtPhoto = (AppCompatImageView) dialog.findViewById(R.id.aciv_flag);
+        txtName.setText("CountryName : " + countryList.get(position).getName().toString());
+        txtCodetwo.setText("AlphaCode2 : " + countryList.get(position).getAlpha2Code().toString());
         actv_namethree.setText("AlphaCode3 : " + countryList.get(position).getAlpha3Code().toString());
         byte[] image = countryList.get(position).getImage();
         if (null != image) {
             Bitmap bmp = BitmapFactory.decodeByteArray(image, 0, image.length);
-            aciv_photo.setImageBitmap(bmp);
+            txtPhoto.setImageBitmap(bmp);
         }
         dialog.findViewById(R.id.btn_cancel).setOnClickListener(new View.OnClickListener() {
             @Override
@@ -265,7 +265,7 @@ public class MainActivity extends AppCompatActivity {
     }
 
 
-    private void SaveDialog() {
+    private void saveDialog() {
         final Dialog dialog = new Dialog(activity);
         dialog.requestWindowFeature(Window.FEATURE_NO_TITLE);
         dialog.setContentView(R.layout.dialog_addcountry);
