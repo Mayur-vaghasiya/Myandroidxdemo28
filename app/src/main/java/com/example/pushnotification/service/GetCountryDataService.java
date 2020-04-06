@@ -7,6 +7,7 @@ import retrofit2.http.GET;
 
 public interface GetCountryDataService {
 
+    /*End point for get All Country With all data*/
     @GET("country/get/all")
-    Call<CountryModel> getJSON();
+    Call<CountryModel> getAllCountry();
 }

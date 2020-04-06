@@ -198,7 +198,7 @@ public class MainActivity extends AppCompatActivity {
 
     public void getcountryList() {
         service = ApplicationLoader.getAppLoader().getRetrofitInstance().create(GetCountryDataService.class);
-        Call<CountryModel> call = service.getJSON();
+        Call<CountryModel> call = service.getAllCountry();
         progress = new CustomProgressDialog(activity).
                 setStyle(CustomProgressDialog.Style.SPIN_INDETERMINATE)
                 .setDimAmount(0.5f)
